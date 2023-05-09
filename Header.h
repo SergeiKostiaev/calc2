@@ -7,19 +7,19 @@
 
 //КАЛЬКУЛЯТОР
 
-int Add(int a, int b) //сумма
+int Add(int a, int b) //Plus
 {
 	return (a + b);
 }
-int Sub(int a, int b) //разность
+int Sub(int a, int b) //Minus
 {
 	return (a - b);
 }
-int Mult(int a, int b) //умножение
+int Mult(int a, int b) //Mult
 {
 	return (a * b);
 }
-int Del(int a, int b) //деление
+int Del(int a, int b) //Division
 {
 	return (a / b);
 }
@@ -30,15 +30,18 @@ void Calc()
 	while (pt != 0)
 	{
 		system("cls");
-		printf_s("Сложение - 1\n");
-		printf_s("Вычитание - 2\n");
-		printf_s("Умножение - 3\n");
-		printf_s("Деление - 4\n");
-		printf_s("Выход - 0\n");
+		printf_s("Plus - 1\n");
+		printf_s("Minus - 2\n");
+		printf_s("Mult - 3\n");
+		printf_s("Division - 4\n");
+		printf_s("Exit - 0\n");
 
-		printf_s("Ввод пункта меню\n");
+		printf_s("Enter menu item:\n");
 		scanf_s("%d", &pt);
+		printf_s("Enter two numbers/ Change action, press 0:\n");
 		scanf_s("%d %d", &a, &b);
+		
+
 		switch (pt)
 		{
 		case 1:
